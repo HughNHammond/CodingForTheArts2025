@@ -3,6 +3,6 @@ function setup() {
 
 
     param1 = false;
-    console.log("Some parameters were just called");
     param2 = false;
+    console.log("Some parameters were just called" + param1 + param2);
 }
