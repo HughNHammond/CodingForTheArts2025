@@ -35,13 +35,11 @@ class Enemy {
         this.tileX = Math.floor(this.xPos / this.tileSize);
         this.tileY = Math.floor(this.yPos / this.tileSize);
 
-        if (dist(this.tileX, this.tileY, player.tileX, player.tileY) < 5) {
+        if (dist(this.tileX, this.tileY, player.tileX, player.tileY) < 5) { //Checks player's position relative to enemy, if within 5 tiles, chase!
             this.alert = true;
         } else {
             this.alert = false;
         }
-        console.log(dist(this.tileX, this.tileY, player.tileX, player.tileY))
-        console.log(this.alert)
     }
 
     chase() {
